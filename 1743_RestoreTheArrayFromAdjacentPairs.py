@@ -19,6 +19,7 @@ class Solution:
         
         visited = set()
         collection = []
+        
         ## call dfs 
         def dfs(s):
             collection.append(s)
