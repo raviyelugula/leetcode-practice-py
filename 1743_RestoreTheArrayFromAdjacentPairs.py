@@ -11,7 +11,7 @@ class Solution:
             g[e1].append(e2)
             g[e2].append(e1)
         
-        ## find the starting/ending element i,e with len 1 
+        ## find the starting/ending element i,e with len 1 only
         for key, value in g.items():
             if len(value)==1: 
                 start = key 
@@ -19,7 +19,7 @@ class Solution:
         
         visited = set()
         collection = []
-        
+
         ## call dfs 
         def dfs(s):
             collection.append(s)
